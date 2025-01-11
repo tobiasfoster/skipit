@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+:root {
+  font-size: 10px;
+  font-family: "Oswald", serif;
+  background: oklch(0.24 0.13 292.89);
+  color: #d8d8d8;
+}
+
+
+.oswald-400 {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 300px;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid #b000ff;
+}
+
+.extension-title {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin: 0.8rem 0;
+}
+
+.select-services-title {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0.4rem 0;
+  color: #d9afe5;
+  text-transform: uppercase;
+}
+
+.service-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.8rem 0;
+}
+
+.service-name {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.service-description {
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 51px;
+  height: 31px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #383838;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 27px;
+  width: 27px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #d8d8d8;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #b000ff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
