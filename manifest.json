@@ -9,7 +9,7 @@
     "48": "icons/skipit_icon.png",
     "128": "icons/skipit_icon.png"
   },
-  "permissions": ["activeTab", "storage"],
+  "permissions": ["storage"],
   "host_permissions": [
     "*://*.netflix.com/*",
     "*://*.disneyplus.com/*",
