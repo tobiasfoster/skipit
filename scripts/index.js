@@ -98,7 +98,6 @@ const observer = new MutationObserver(() => {
   }
 });
 
-// Start observing the document body for changes
 observer.observe(document.body, {
   childList: true,
   subtree: true,
