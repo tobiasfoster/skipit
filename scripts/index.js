@@ -46,7 +46,6 @@ function findElementByText(searchText) {
   return element;
 }
 
-// Modify the existing observer to also check for the button
 const observer = new MutationObserver(() => {
   if (window.location.hostname.includes("netflix") && location.pathname.includes("watch") && isNetflixEnabled) {
     const skipIntroElement = findElementByText(strings.netflix.skipIntro);
