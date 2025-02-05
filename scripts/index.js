@@ -55,12 +55,12 @@ const observer = new MutationObserver(() => {
     if (skipIntroElement && !clicked) {
       skipIntroElement.click();
       clicked = true
-      console.log('%c[Intro Skipper] Intro skipped!', 'color: #2ecc71;');
+      console.log('%c[SkipIt] Intro skipped!', 'color: #2ecc71;');
     }
 
     if (continuePlayingElement) {
       continuePlayingElement.click();
-      console.log('%c[Intro Skipper] Continue playing clicked!', 'color: #2ecc71;');
+      console.log('%c[SkipIt] Continue playing clicked!', 'color: #2ecc71;');
     }
   }
 
@@ -74,7 +74,7 @@ const observer = new MutationObserver(() => {
     if (skipIntroElement && !clicked) {
       skipIntroElement.click();
       clicked = true
-      console.log('%c[Intro Skipper] Intro skipped!', 'color: #2ecc71;');
+      console.log('%c[SkipIt] Intro skipped!', 'color: #2ecc71;');
     }
 
   }
@@ -89,7 +89,7 @@ const observer = new MutationObserver(() => {
     if (skipIntroElement && !clicked) {
       skipIntroElement.click();
       clicked = true
-      console.log('%c[Intro Skipper] Intro skipped!', 'color: #2ecc71;');
+      console.log('%c[SkipIt] Intro skipped!', 'color: #2ecc71;');
     }
   }
 });
