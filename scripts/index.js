@@ -17,8 +17,6 @@ let isDisneyEnabled = false
 let isAmazonEnabled = false
 let clicked = false
 
-
-
 chrome.storage.sync.get(["netflix", "disney", "amazon"]).then((result) => {
   isNetflixEnabled = result.netflix ?? true
   isDisneyEnabled = result.disney ?? true
